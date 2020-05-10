@@ -217,7 +217,7 @@ p{
 .cont-contact{
     /* border-top: 1px solid rgb(126, 120, 120, 0.5); */
     margin: 60px 0 0px;
-    padding: 10px 0 10%;
+    padding: 10px 0 5%;
     
 }
 footer{
@@ -227,40 +227,42 @@ footer{
 }
 .heading-contact{
     width: 90% ;
-    margin: 0px auto;
-    padding: 20px;
+    margin: 0px auto 0 120px;
+    padding: 40px;
     /* border-bottom: 1px solid rgb(126, 120, 120, 0.5); */
 }
 
 .cont-icon{
-    padding: 20px 0 20px;
+    padding: 20px 0;
 }
 footer a{
     color: white    ;
 }
 .email-text{
     display: table-cell;
-        width: 250px;
-        height: 200px;
-        padding: 10px;
+        /* width: 10px;
+        height: 200px; */
+        /* padding: 10px; */
         /* border: 3px dashed #1c87c9; */
         vertical-align: middle;
-    
+        font-size: 18px;
+        color: white;
 }
+
 .linkedIn{
-    width: 2%;
+    width: 2.5%;
     height: 2%;
     color: white;
     background-color: white;
 }
 .icon{
-    margin: 10px 100px;
+    margin: 10px 80px;
     display: inline;
     cursor: pointer;
-    
+    color: whitesmoke;
 }
-.material-icons{
-    padding: 20px;
-    /* cursor: pointer; */
-}
+/* .material-icons{
+    /* padding: 20px; */
+    /* cursor: pointer; s
+} */
 
