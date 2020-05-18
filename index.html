@@ -7,25 +7,50 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript" src="./js/script1.js"></script>
+    <script src="https://kit.fontawesome.com/c9b33c0b6c.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <nav class="top-navbar flx">
-        <a href="#about" class="flx-itm">About</a>
-        <a href="#work-experience" class="flx-itm">Work experience</a>
-        <a href="#skills" class="flx-itm">Skills</a>
-        <a href="#portfolio" class="flx-itm">Portfolio</a>
-        <!-- <a href="#education" class="flx-itm">Education</a>
-        <a href="#" class="flx-itm">Interests</a> -->
-        <a href="#contact" class="flx-itm">Contact</a>
-    </nav>
-</header>
+
+<body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <script type="text/javascript">
+            AOS.init({
+                duration: 2000,
+            }
+            );
+    </script>
+
+<!-- ---------------- Hero Welcome ---------------->
+<section class="sec-animate">
+    <h1 data-aos="fade-up">Welcome !!</h1>
+    <div class="typewriter-cont"> 
+        <p>A software Developer | Creator | Learner.</p>
+    </div>
+</section>
+
+<!-------------- Scroll down bouncing arrow ------------->
+<section class="cont-scroll-text">
+    <div class="scroll">
+        <p>Scroll Down</p>
+        <!--  Bounce arrow container -->
+        <div class="bounce-arrow">
+            <p>^</p>
+        </div> 
+    </div>
+</section>
 
 
-<!-- About Section -->
-<div id="main" class="cont-main" >
+
+
+
+<!------------------------- New about ------------------>
+<div class="shadow cont-box" data-aos="flip-up">
     <div class="cont-section cont-about" id="about">
         <div class="heading-section"> <h1 class="gradient-text">About Me: </h1></div>
         <section  class="body-about">
@@ -44,14 +69,16 @@
             </div>
         </section>
     </div>
+</div>
 
-
-    <!-- experience section -->
-    <div class="cont-section" id="work-experience">
+<!-- Work-Experience -->
+<!-- <div class="heading-section work-cont-box" > <h1 class="gradient-text">Work experience: </h1></div> -->
+<div id="work-experience" class="shadow work-cont-box" data-aos="zoom-in-up">
+    <div class="cont-section" >
         <div class="heading-section"> <h1 class="gradient-text">Work experience: </h1></div>
         <section  class="body-about">
             <h2 class="gradient-text">Software Engineer: </h2>
-            <p style="margin: 0 0 10px; font-size: 18px;">Kanaka Software (2019 - Present)</p>
+            <p style="margin: 0 0 10px;">Kanaka Software (2019 - present)</p>
             <ul>
                 <li>Having experience in working closely in all phases of SDLC life cycle, right from requirement gathering and analysis to development, implementation and resolving bugs or errors. </li>
                 <li>Independently developed slack bot for process monitoring and faster issue tracking. Thus improved many hours of manual worked involved earlier in the issue tracking</li>
@@ -71,14 +98,17 @@
             </div> -->
         </section>
     </div>
+</div>
 
-    <!-- skills section -->
+
+<!-- skills section -->
+<div class="shadow cont-box">
     <div class="cont-section" id="skills" >
-        <div class="heading-section"> <h1 class="gradient-text">Skills & technologies : </h1></div>
+        <div class="heading-section"> <h1 class="gradient-text" data-aos="fade-right" data-aos-duration="1000">Skills & technologies : </h1></div>
         <section class="body-skills">
             <div class="grid-skills"> 
-                <div class="skills-box">
-                    <ul class="skills-ul">
+                <div class="skills-box" data-aos="fade-right" data-aos-duration="2000">
+                    <ul class="skills-ul" >
                         <li>Java Core</li>
                         <li>Spring Boot</li>
                         <li>Spring Data</li>
@@ -87,7 +117,7 @@
                         <li>Maven</li>
                     </ul>
                 </div>
-                <div class="skills-box">
+                <div class="skills-box" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
                     <ul class="skills-ul">
                         <li>Postgres</li>
                         <li>Unix</li>
@@ -97,7 +127,7 @@
                         <li>Bitbucket</li>
                     </ul>
                 </div>
-                <div class="skills-box">
+                <div class="skills-box" data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
                     <ul class="skills-ul">
                         <li>Angular</li>
                         <li>Javascript</li>
@@ -108,8 +138,11 @@
             </div>
         </section>
     </div>
+</div>
 
-    <!-- Portfolio section -->
+
+<!-- Portfolio section -->
+<div class="shadow cont-box">
     <div class="cont-section" id="portfolio">
         <div class="heading-section"> <h1 class="gradient-text">Portfolio: </h1></div>
         <section class="body-portfolio">
@@ -133,20 +166,22 @@
                     </a>
                 </div>
                 <div class="portfolio-box">
-                    <a href="https://github.com/ankitvd6/ankit-dwivedi">
+                    <a href="https://github.com/ankitvd6/ExpenseManagerApp">
                         <div class="project-details"> 
                             <h3>My Portfolio Site</h3>
                             <p>A simple portfolio web page made using HTML, CSS only.</p><br>
-                            <p>Project code: <a href="https://github.com/ankitvd6/ankit-dwivedi">Click Here</a></p>
+                            <p>Project code: <a href="https://github.com/ankitvd6/TypingSpeedCalculator">Click Here</a></p>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
     </div>
-
 </div>
-<body>
+
+<!-- About Section -->
+<div id="main" class="cont-main" ></div>
+
 
     <!-- Contact section -->
 <footer>
@@ -154,11 +189,13 @@
             <div class="heading-contact"> 
                 <h1>Contact Me: </h1>
             </div>
-            <div class="cont-icon">
-                <div class="icon email-text"><p class="icon">Email: ankitvd6@gmail.com</p></div>
-                <div class="icon email-text"><a href="https://www.linkedin.com/in/ankit-dwivedi-101/"><img class="linkedIn icon" src="./images/38669.svg"></a></div>
-                <div class="icon email-text"><a href="https://www.github.com/ankitvd6"><img class="linkedIn icon" src="./images/git2.png"></a></div>
-            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/ankit-dwivedi-101/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/ankitvd6"><i class="fab fa-github"></i></a>
+            </div>  
             
         </div>
 </footer>
+
+
+</body>
