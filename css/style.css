@@ -5,304 +5,36 @@
     padding: 0;
     margin: 0;
 }
-
-/* nav bar top */
-.top-navbar{
-    padding: 20px 20px;
-    border-bottom: 1px solid rgb(126, 120, 120, 0.5);
-    font-size: 0;
+body{
+    position: relative;
 }
-
-nav a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 40px;
-    color: #777;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-/* center box containing all the sections */
-#main{
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-}
-.cont-main{
-    width: 75%;
-    margin: 30px auto;
-    /* border: 1px solid rgb(126, 120, 120, 0.5); */
-}
-
-/* .flx{
-    display: flex;
-    flex: 0 1 50px;
-}
-
-.flx-item{
-    flex: 1 1 auto;
-} */
-
-/* container for each section */
-.cont-section{
-    margin: 20px 20px;
-    padding: 0px 0 40px;
-    /* transition: background-color 0.2s, color 0.2s; */
-    /* background-color: #53a7ea; */
-}
-/* .cont-section:hover{
-    background-color: #53a7ea;
-    color: white;
-} */
-
-/* heading of each section */
-.heading-section{
-    width: 90% ;
-    margin: 0px auto;
-    padding: 20px;
-    border-bottom: 1px solid rgb(126, 120, 120, 0.5);
-}
-
-/* body of each section this define s the detail */
-.body-about{
-    margin: 20px 0 0 80px;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 0 5%;
-}
-
-/*---------- about section-------------- */
-
-/*increasing space between the lines. */
-#about p{
-    color: #53a7ea;
-}
-.cont-about .right{
-    /* margin: 30px; */
-    /* padding-bottom: 0px; */
-    line-height: 20px;
-}
-/* adding space after the Name */
-.cont-about .right h1{
-    margin: 10px 0 10px;
-}
-
-.img-profile{
-    border-radius: 80%;
-    width: 100px;
-    height: 100px;
-}
-
-.inline{
-    display: inline-block;
-}
-
-/* text gradient */
-.gradient-text {
-    /* Fallback: Set a background color. */
-    background-color: red;
-    
-    /* Create the gradient. */
-    background-image: linear-gradient(95deg, #f3ec78, #df3d6b);
-    
-    /* Set the background size and repeat properties. */
-    background-size: 80%;
-    background-repeat: repeat;
-  
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-h1,h2 {
-    font-family: "Archivo Black", sans-serif;
-  }
-
-p{
-    /* font-family: "Archivo Black", sans-serif; */
-    color: #888;
-    font-weight: 600;
-}
-
-/* -----------------work experience section------------------- */
-#work-experience li{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 20px;
-    color: #777;
-}
-
-  .material-icons{
-      margin: 5px 0 0 0;
-      padding: 5px 0 0;
-  }
-
-  .icon-text{
-      padding: 0 0 5px;
-  }
-
-  /* ---------------skills section------------------------ */
-#skills li{
-    color: #53a7ea;
-    line-height: 20px;
-}
-.body-skills{
-    margin: 20px 0 0 40px;
-}
-  .grid-skills{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 5px;
-  }
-
-.skills-box{
-    border: 1px solid #D8D8D8;
-    border-radius: 8px;
-    width: 80%;
-    height: 200px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    display: inline-block;
-    margin: 10px;
-}
-.skills-box:hover{
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-}
-.skills-ul{
-    margin: 30px;
-}
-
-  /* -------------------portfolio section----------------------- */
-.body-portfolio{
-    margin: 20px 0 0 40px;
-}
-.grid-portfolio{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 5px;
-}
-
-.portfolio-box{
-    border: 1px solid #D8D8D8;
-    border-radius: 8px;
-    width: 80%;
-    height: 200px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-}
-.portfolio-box:hover{
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22);
-    /* cursor: pointer; */
-}
-.portfolio-box a, .portfolio-box a:link, .portfolio-box a:active{
-    text-decoration: none;
-    /* color: #777; */
-}
-.project-details h3{
-    color: #53a7ea;
-    margin: 0 0 5px;
-}
-.project-details p{
-    font-size: 14px;
-    line-height: 18px;
-    color: #777;
-}
-
-#portfolio a:active, #portfolio a:link, #portfolio a{
-    text-decoration: none;
-    color: #3b5998;
-}
-
-
-/* --------------------footer--------------------- */
-.cont-contact{
-    /* border-top: 1px solid rgb(126, 120, 120, 0.5); */
-    margin: 60px 0 0px;
-    padding: 10px 0 2%;
-    
-}
-footer{
-    background-color: #262626;
-    color: white;
-    margin: 8% 0 0;
-}
-.heading-contact{
-    margin: 0px auto 0 10%;
-    padding: 40px;
-    display: inline-block;
-    width: 30% ;
-    /* border-bottom: 1px solid rgb(126, 120, 120, 0.5); */
-}
-.icons{
-    display: inline-block;
-    width: 25%;
-    margin: 0 auto 0 30%;
-    font-size: 30px;
-}
-.icons a{
-    padding: 10px 20px;
-}
-
-.cont-icon{
-    padding: 20px 0;
-}
-footer a{
-    color: white    ;
-}
-
-
-
-
-/* new box for each section like about */
-.shadow {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.22);
-}
-.cont-box{
-    width: 70%;
-    margin: 150px auto;
-}
-.work-cont-box{
-    width: 70%;
-    margin: 30px auto;
-}
-
-/* for animations */
-.sec-animate {
+/* for hero */
+.hero {
     background-color: #74b9ff;
-    /* background: url("/content/dam/infosys-web/en/global-resource/18/banner/being-resilient-lead.jpg"); */
+    background: url("../images/apple_macbook_5k.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.8; */
-    width: 100%; 
-    height: 88vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* display: grid; */
-    z-index: -1;
-}
-.sec-animate h1{
-    /* background-color: blue; */
-    margin: 0;
-    padding: 10px;
+    width: 100%;
+    height: 100vh;
     text-align: center;
+    position: relative;
+}
+.hero h1{
+    display: inline-block;
+    margin: 16% 20% 20px 20%;
+    padding: 10px;
+    /* text-align: center; */
     font-family: sans-serif;
     font-size: 5em;
-    color: #262626;
+    /* color: #262626; */
     background-color: #fff;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 25px rgba(233, 225, 225, 0.5);
     
 }
+
 .typewriter-cont {
-    margin: 30px 0;
+    margin: 30px auto;
     padding: 5px 0;
     font-size: 20px;
     font-family: 'Source Code Pro', monospace;
@@ -310,13 +42,37 @@ footer a{
     white-space: nowrap;
     /* background-color: #D8D8D8; */
     width: 0; 
-    /* border-right: 2px solid rgba(0, 0, 0, 0.5); */
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
     animation: move 4s 2s steps(42,end) 3 alternate forwards, 
         animated-cursor 600ms steps(42,end) infinite;
 }
-
 .typewriter-cont p{
-    color: rgb(221, 132, 59);
+    color: whitesmoke;
+}
+
+.cont-scroll-text {
+    background-color: #74b9ff;
+    /* opacity: 0.8; */
+    width: 100%; 
+    /* height: 15vh; */
+    text-align: center;
+    font-size: 18px;
+}
+.scroll p{
+    /* background-color: #3b5998; */
+    bottom: 100px;
+    display: inline-block;
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.bounce-arrow p{
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 30px;
+    transform: rotate(180deg);
+    animation: bounce 0.5s infinite alternate 2s;
+    text-shadow: none;
 }
 
 @keyframes move{
@@ -338,28 +94,7 @@ footer a{
     from{border-right-color: rgba(0, 0, 0, 0.5)}
     to{border-right-color: transparent;}
   }
-.cont-scroll-text {
-    background-color: #74b9ff;
-    /* opacity: 0.8; */
-    width: 100%; 
-    height: 15vh;
-    text-align: center;
-    font-size: 18px;
-}
-.scroll p{
-    display: inline-block;
-    font-size: 25px;
-    color: black;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-}
-.bounce-arrow p{
-    /* display: inline-block; */
-    text-align: center;
-    font-size: 30px;
-    transform: rotate(180deg);
-    animation: bounce 0.5s infinite alternate 2s;
-    text-shadow: none;
-}
+
 
 @keyframes bounce{
     from{
@@ -368,6 +103,249 @@ footer a{
     to{
         height: 50px;
     }
+}
+
+
+/* Thoughts section */
+.thoughts{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    /* background: #23074d;  
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  
+    background: linear-gradient(to right, #cc5333, #23074d);  */
+
+    /* text-align: center; */
+}
+.quote:nth-child(1){
+    width: 80%;
+    margin: 0px auto;
+    padding: 80px 0;
+    font-size: 28px;
+    color: whitesmoke;
+    font-family: cursive;
+    font-style: italic; 
+}
+.quote:nth-child(2){
+    width: 80%;
+    margin: 0px auto;
+    padding: 10px 0;
+    font-size: 28px;
+    color: whitesmoke;
+    font-family: cursive;
+    font-style: italic; 
+}
+
+/*------------About me --------------------------*/
+#about-me {
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    /* background: #23074d;  
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d); 
+    background: linear-gradient(to right, #cc5333, #23074d);  */
+
+    
+    /* background-color: black; */
+}
+/* heading of each section */
+.heading-section{
+    width: 90% ;
+    margin: 0px auto 0 120px;
+    padding: 20px;
+    font-size: 26px;
+    /* background-color: #3b5998; */
+}
+
+#about-me:hover .gradient-text-4 {
+    cursor: pointer;
+}
+/* body of each section this define s the detail */
+.body-about{
+    margin: 20px 0 0 140px;
+    width: 72%;
+    line-height: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+    /* background-color: green; */
+    
+}
+
+/*------------------ Experience typing animation ---------------------*/
+#experience {
+    width: 100%;
+    height: 110vh;
+    padding: 40px 0px;
+    background-image: linear-gradient(45deg, #A31377 0%, #fa4365 50%,#ffd91e 100%); 
+    /* background: #23074d;  
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d); 
+    background: linear-gradient(to right, #cc5333, #23074d);  */
+
+}
+
+[data-aos="custom-anim"] {
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px auto 0 80px;
+    /* padding: 20px; */
+    /* background-color: #3b5998; */
+    width: 0; 
+}
+[data-aos="custom-anim"].aos-animate {
+    width: 335px;
+}
+#experience .heading-section {
+    padding: 0;
+    margin-left: 140px;
+    color: #262626;
+    /* background-color: #74b9ff; */
+}
+.body-experience {
+    margin: 20px 0 0 120px;
+    padding: 20px;
+    width: 75%;
+    line-height: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+    /* background-color: green; */
+}
+
+/* ---------------skills section------------------------ */
+#skill-section {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+    background: url(../images/cycling.jpg);
+    background-color: #262626;
+    color: whitesmoke;
+    font-size: 20px;
+    /* line-height: 20px; */
+}
+.gradient-border {
+    border: 10px solid;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+}
+.body-skills{
+    margin: 40px 0 0 40px;
+}
+.grid-skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+}
+/* .skills-grid-box:nth-child(1) {
+    border-right: 3px solid;
+    border-left: 3px solid;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+    width: 70%;
+    height: 100%;
+   
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    margin: 10px;
+} */
+.skills-grid-box {
+    border-right: 3px solid;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+    width: 70%;
+    height: 100%;
+   
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    margin: 10px;
+}
+.skills-grid-box:hover{
+    /* transform: translate(10px, 10px); */
+    /* box-shadow: 10px 10px 10px rgba(221, 210, 210, 0.303); */
+    cursor: pointer;
+}
+.skills-ul{
+    margin: 30px;
+}
+
+
+/* -------------------portfolio section----------------------- */
+#portfolio-section {
+    margin: 0;
+    /* display: block; */
+    width: 100%;
+    height: 100vh;
+    /* max-height: 100%; */ 
+    padding: 40px 0;
+    /* background: url(../images/working_on_desk.jpg); */
+    /* background-color: #3b5998; */
+    background-image: linear-gradient(45deg, red,blue);
+    color: whitesmoke;
+    font-size: 20px;
+}
+#portfolio-section a, #portfolio-section a:link, #portfolio-section a:active {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#portfolio-section .grid-skills {
+    grid-template-rows: 250px;
+}
+.project-details {
+    /* color: #whi; */
+    margin: 10px 10px;
+}
+.project-details p{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* --------------------footer--------------------- */
+#contact-section {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20vh;
+}
+.cont-contact{
+    /* border-top: 1px solid rgb(126, 120, 120, 0.5); */
+    background-color: #262626;
+    color: white;
+    margin: 60px 0 0px;
+    padding: 10px 0 2%;
+    
+}
+#contact-section .heading-section {
+    margin: 20px auto 0 10%;
+    padding: 10px;
+    display: inline-block;
+    width: 150px ;  
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+}
+#contact-section .heading-section:hover{
+    cursor: pointer;
+}
+.icons{
+    display: inline-block;
+    width: 25%;
+    margin: 0 auto 0 50%;
+    font-size: 30px;
+}
+.icons a{
+    padding: 10px 20px;
+}
+
+.cont-contact a :hover{
+    color: white;
+    /* background-color: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)); */
 }
 
 
